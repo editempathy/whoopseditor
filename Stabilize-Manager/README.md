@@ -9,6 +9,16 @@ Part of the **whoopseditor** suite for DaVinci Resolve.
 [![Instagram @i.vkpraveenkumar](https://img.shields.io/badge/Personal-@i.vkpraveenkumar-833AB4?style=flat&logo=instagram&logoColor=white)](https://instagram.com/i.vkpraveenkumar)
 
 <p align="center">
+  <a href="https://github.com/editempathy/whoopseditor/raw/main/whoopseditor-Stabilize-Manager-v1.0.0.zip">
+    <img src="https://img.shields.io/badge/⬇️_DOWNLOAD_FOR_FREE-ZIP_(v1.0.0)-00C853?style=for-the-badge&logo=github&logoColor=white" height="40" alt="Download Free ZIP" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/editempathy/whoopseditor/releases">
+    <img src="https://img.shields.io/badge/📦_RELEASES-GitHub-238636?style=for-the-badge&logo=github&logoColor=white" height="40" alt="GitHub Releases" />
+  </a>
+</p>
+
+<p align="center">
   <img src="../assets/preview_colors_tab.png" alt="Stabilize Manager - Clip Colors Tab" width="600" />
 </p>
 
