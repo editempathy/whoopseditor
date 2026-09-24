@@ -4,18 +4,18 @@
 
 Crafted by **Praveen Kumar** for professional editors, colorists, and post-production studios.
 
-[![Star on GitHub](https://img.shields.io/github/stars/editempathy/whoopseditor?style=social)](https://github.com/editempathy/whoopseditor)
+[![Star on GitHub](https://img.shields.io/github/stars/whoopseditor/DaVinci-Resolve?style=social)](https://github.com/whoopseditor/DaVinci-Resolve)
 [![DaVinci Resolve Studio & Free](https://img.shields.io/badge/DaVinci_Resolve-18.5%20%7C%2019%20%7C%2020+-blue?style=flat&logo=blackmagicdesign&logoColor=white)](https://www.blackmagicdesign.com/products/davinciresolve)
 [![Platform macOS & Windows](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-lightgrey?style=flat)]()
 [![Instagram @whoopseditor](https://img.shields.io/badge/Instagram-@whoopseditor-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/whoopseditor)
 [![Instagram @i.vkpraveenkumar](https://img.shields.io/badge/Personal-@i.vkpraveenkumar-833AB4?style=flat&logo=instagram&logoColor=white)](https://instagram.com/i.vkpraveenkumar)
 
 <p align="center">
-  <a href="https://github.com/editempathy/whoopseditor/raw/main/whoopseditor-Stabilize-Manager-v1.0.0.zip">
+  <a href="https://github.com/whoopseditor/DaVinci-Resolve/releases/download/v1.0.0/whoopseditor-Stabilize-Manager-v1.0.0.zip">
     <img src="https://img.shields.io/badge/⬇️_DOWNLOAD_FOR_FREE-ZIP_(v1.0.0)-00C853?style=for-the-badge&logo=github&logoColor=white" height="42" alt="Download Free ZIP" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/editempathy/whoopseditor/releases">
+  <a href="https://github.com/whoopseditor/DaVinci-Resolve/releases">
     <img src="https://img.shields.io/badge/📦_RELEASES-GitHub-238636?style=for-the-badge&logo=github&logoColor=white" height="42" alt="GitHub Releases" />
   </a>
 </p>
@@ -44,7 +44,7 @@ All tools in **whoopseditor** are **100% free** for both personal and commercial
 
 ## 🚀 Quick Download & Install
 
-1. Download the latest pre-packaged release: **[Stabilize Manager v1.0.0 (ZIP)](https://github.com/editempathy/whoopseditor/raw/main/whoopseditor-Stabilize-Manager-v1.0.0.zip)**.
+1. Download the latest pre-packaged release: **[Stabilize Manager v1.0.0 (ZIP)](https://github.com/whoopseditor/DaVinci-Resolve/releases/download/v1.0.0/whoopseditor-Stabilize-Manager-v1.0.0.zip)**.
 2. Unzip the folder.
 3. Run the installer:
    * **macOS**: Double-click `Install_Mac.command`
@@ -65,4 +65,4 @@ Facing a repetitive, annoying editing problem or have an idea for a workflow too
 * 💬 **Instagram DM (Tools & Editing)**: [@whoopseditor](https://instagram.com/whoopseditor)
 * 👤 **Instagram DM (Personal)**: [@i.vkpraveenkumar](https://instagram.com/i.vkpraveenkumar)
 * 📧 **Email**: [editempathy@gmail.com](mailto:editempathy@gmail.com)
-* 💡 **Feature Requests / Suggestions**: Open an [Issue](https://github.com/editempathy/whoopseditor/issues) on GitHub
+* 💡 **Feature Requests / Suggestions**: Open an [Issue](https://github.com/whoopseditor/DaVinci-Resolve/issues) on GitHub

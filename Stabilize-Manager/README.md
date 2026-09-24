@@ -4,16 +4,16 @@
 
 Part of the **whoopseditor** suite for DaVinci Resolve.
 
-[![Star on GitHub](https://img.shields.io/github/stars/editempathy/whoopseditor?style=social)](https://github.com/editempathy/whoopseditor)
+[![Star on GitHub](https://img.shields.io/github/stars/whoopseditor/DaVinci-Resolve?style=social)](https://github.com/whoopseditor/DaVinci-Resolve)
 [![Instagram @whoopseditor](https://img.shields.io/badge/Instagram-@whoopseditor-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/whoopseditor)
 [![Instagram @i.vkpraveenkumar](https://img.shields.io/badge/Personal-@i.vkpraveenkumar-833AB4?style=flat&logo=instagram&logoColor=white)](https://instagram.com/i.vkpraveenkumar)
 
 <p align="center">
-  <a href="https://github.com/editempathy/whoopseditor/raw/main/whoopseditor-Stabilize-Manager-v1.0.0.zip">
+  <a href="https://github.com/whoopseditor/DaVinci-Resolve/releases/download/v1.0.0/whoopseditor-Stabilize-Manager-v1.0.0.zip">
     <img src="https://img.shields.io/badge/⬇️_DOWNLOAD_FOR_FREE-ZIP_(v1.0.0)-00C853?style=for-the-badge&logo=github&logoColor=white" height="40" alt="Download Free ZIP" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/editempathy/whoopseditor/releases">
+  <a href="https://github.com/whoopseditor/DaVinci-Resolve/releases">
     <img src="https://img.shields.io/badge/📦_RELEASES-GitHub-238636?style=for-the-badge&logo=github&logoColor=white" height="40" alt="GitHub Releases" />
   </a>
 </p>
@@ -66,4 +66,4 @@ Facing a repetitive, annoying editing problem or have an idea for a tool that wo
 
 * 💬 **Instagram DM**: [@whoopseditor](https://instagram.com/whoopseditor) or [@i.vkpraveenkumar](https://instagram.com/i.vkpraveenkumar)
 * 📧 **Email**: [editempathy@gmail.com](mailto:editempathy@gmail.com)
-* 💡 **Feature Requests**: Open an [Issue](https://github.com/editempathy/whoopseditor/issues) on GitHub
+* 💡 **Feature Requests**: Open an [Issue](https://github.com/whoopseditor/DaVinci-Resolve/issues) on GitHub
