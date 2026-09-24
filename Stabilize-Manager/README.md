@@ -4,8 +4,8 @@
 
 Part of the **whoopseditor** suite for DaVinci Resolve.
 
-[![Star on GitHub](https://img.shields.io/github/stars/whoopseditor/DaVinci-Resolve?style=social)](https://github.com/whoopseditor/DaVinci-Resolve)
-[![Instagram @whoopseditor](https://img.shields.io/badge/Instagram-@whoopseditor-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/whoopseditor)
+[![Star on GitHub](https://img.shields.io/github/stars/whoopseditor/DaVinci-Resolve?style=social)](https://github.com/whoopseditor/DaVinci-Resolve)<br/>
+[![Instagram @whoopseditor](https://img.shields.io/badge/Instagram-@whoopseditor-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/whoopseditor)<br/>
 [![Instagram @i.vkpraveenkumar](https://img.shields.io/badge/Personal-@i.vkpraveenkumar-833AB4?style=flat&logo=instagram&logoColor=white)](https://instagram.com/i.vkpraveenkumar)
 
 <p align="center">
