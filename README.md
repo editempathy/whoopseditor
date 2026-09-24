@@ -1,11 +1,20 @@
 # 🎬 whoopseditor
 
-> Modern, high-performance workflow automations, scripts, and utilities for **Blackmagic DaVinci Resolve**.
+> High-performance workflow automations, scripts, and utilities for **Blackmagic DaVinci Resolve**.
 
 Crafted by **Praveen Kumar** for professional editors, colorists, and post-production studios.
 
-[![Instagram @whoopseditor](https://img.shields.io/badge/Instagram-@whoopseditor-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/whoopseditor)
-[![Instagram @i.vkpraveenkumar](https://img.shields.io/badge/Personal-@i.vkpraveenkumar-833AB4?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/i.vkpraveenkumar)
+[![Star on GitHub](https://img.shields.io/github/stars/editempathy/whoopseditor?style=social)](https://github.com/editempathy/whoopseditor)
+[![DaVinci Resolve Studio & Free](https://img.shields.io/badge/DaVinci_Resolve-18.5%20%7C%2019%20%7C%2020+-blue?style=flat&logo=blackmagicdesign&logoColor=white)](https://www.blackmagicdesign.com/products/davinciresolve)
+[![Platform macOS & Windows](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-lightgrey?style=flat)]()
+[![Instagram @whoopseditor](https://img.shields.io/badge/Instagram-@whoopseditor-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/whoopseditor)
+[![Instagram @i.vkpraveenkumar](https://img.shields.io/badge/Personal-@i.vkpraveenkumar-833AB4?style=flat&logo=instagram&logoColor=white)](https://instagram.com/i.vkpraveenkumar)
+
+<p align="center">
+  <img src="assets/preview_colors_tab.png" alt="whoopseditor DaVinci Resolve Tools" width="650" />
+</p>
+
+> ⭐ **If these tools save you time on your edits, please star this repository!** It helps fellow editors find free tools and keeps future development going strong.
 
 ---
 
@@ -18,19 +27,24 @@ All tools in **whoopseditor** are **100% free** for both personal and commercial
 
 | Tool | Folder | Description | Status |
 | :--- | :--- | :--- | :---: |
-| **Stabilize Manager** | [`/Stabilize-Manager`](./Stabilize-Manager/) | Complete batch stabilization suite: playhead clip, track batch, color batch, re-trim audit & silent hotkey stabilizer | ✅ Released |
+| **[Stabilize Manager](./Stabilize-Manager/)** | [`/Stabilize-Manager`](./Stabilize-Manager/) | Complete batch stabilization suite: playhead clip, track batch, color batch, re-trim audit & silent hotkey stabilizer | ✅ Released |
 | *More Tools Coming Soon* | `—` | Upcoming smart edit automations, cut helpers, and color workflows | ⏳ In Development |
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Download & Install
 
-Browse to any tool directory (for example [`Stabilize-Manager/`](./Stabilize-Manager/)) to find the 1-click installers and setup instructions.
+1. Download the latest pre-packaged release: **[Stabilize Manager v1.0.0 (ZIP)](https://github.com/editempathy/whoopseditor/raw/main/whoopseditor-Stabilize-Manager-v1.0.0.zip)**.
+2. Unzip the folder.
+3. Run the installer:
+   * **macOS**: Double-click `Install_Mac.command`
+   * **Windows**: Right-click `Install_Windows.bat` and click **Run**
+4. Open DaVinci Resolve → `Workspace` → `Scripts` → `Edit` → `Stabilize_Manager`!
 
 ### Compatibility
 * **DaVinci Resolve**: Studio & Free (v18.5, v19.x, v20.x+)
-* **Platforms**: macOS (Apple Silicon / Intel) & Windows 10/11
-* **Dependencies**: 100% standalone — zero third-party packages required.
+* **Platforms**: macOS (Apple Silicon M1/M2/M3/M4 & Intel) and Windows 10/11
+* **Dependencies**: 100% standalone — zero third-party packages needed.
 
 ---
 

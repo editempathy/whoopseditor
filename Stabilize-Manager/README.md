@@ -4,8 +4,17 @@
 
 Part of the **whoopseditor** suite for DaVinci Resolve.
 
-* 🎬 **Editing / DaVinci Tools**: [@whoopseditor](https://instagram.com/whoopseditor)
-* 👤 **Created by**: Praveen Kumar ([@i.vkpraveenkumar](https://instagram.com/i.vkpraveenkumar))
+[![Star on GitHub](https://img.shields.io/github/stars/editempathy/whoopseditor?style=social)](https://github.com/editempathy/whoopseditor)
+[![Instagram @whoopseditor](https://img.shields.io/badge/Instagram-@whoopseditor-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/whoopseditor)
+[![Instagram @i.vkpraveenkumar](https://img.shields.io/badge/Personal-@i.vkpraveenkumar-833AB4?style=flat&logo=instagram&logoColor=white)](https://instagram.com/i.vkpraveenkumar)
+
+<p align="center">
+  <img src="../assets/preview_colors_tab.png" alt="Stabilize Manager - Clip Colors Tab" width="600" />
+</p>
+
+---
+
+> ⭐ **If this tool saves you time, please give this repository a star!** It helps more video editors discover free workflow tools.
 
 ---
 
@@ -26,11 +35,15 @@ Copy `Stabilize_Manager.py` and `Stabilize_Clip.py` to:
 
 ## 🛠 Features
 
-1. **Current Clip Tab**: Stabilize whatever video clip is currently under your playhead across any video track (V1, V2, V3...).
-2. **Video Tracks Tab**: Check multiple video tracks to batch-stabilize entire tracks sequentially with real-time progress.
-3. **Clip Colors Tab**: Filter and batch-stabilize clips by color tags (Orange, Green, Lime, Apricot, or uncolored "No Color" clips). Supports both Current Timeline and Entire Project scopes.
-4. **Check Clips Tab (Audit)**: Automatically compares your timeline edit points against previously stabilized clips to detect any re-trimmed/lengthened clips, with 1-click **Re-Stabilize Extended**.
-5. **Stabilize Clip (Hotkey)**: Run `Stabilize_Clip` via custom keyboard shortcut for background silent stabilization with zero UI interruption.
+| Tab | Preview | Description |
+| :--- | :---: | :--- |
+| **Current Clip** | <img src="../assets/preview_current_tab.png" width="300"/> | Fast stabilization of whatever clip is currently under your playhead. |
+| **Video Tracks** | <img src="../assets/preview_tracks_tab.png" width="300"/> | Select any video tracks (V1, V2, V3...) to batch stabilize sequentially. |
+| **Clip Colors** | <img src="../assets/preview_colors_tab.png" width="300"/> | Filter and batch-stabilize clips by color tags (or uncolored clips). Supports Current Timeline & Entire Project. |
+| **Check Clips** | <img src="../assets/preview_audit_tab.png" width="300"/> | Intelligent edit-point auditor: flags re-trimmed or lengthened clips and re-stabilizes in 1 click. |
+
+### ⚡ Silent Hotkey Stabilizer (`Stabilize_Clip`)
+Assign a custom shortcut in DaVinci Resolve (**Keyboard Customization** → **Scripts** → `Stabilize_Clip`) for background 1-key stabilization with zero UI interruption!
 
 ---
 
