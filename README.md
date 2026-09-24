@@ -9,6 +9,11 @@ Crafted by **Praveen Kumar** for professional editors, colorists, and post-produ
 
 ---
 
+## 🎁 100% Free Tools for Editors
+All tools in **whoopseditor** are **100% free** for both personal and commercial editing projects. No subscriptions. No paywalls. Built by an editor, for editors.
+
+---
+
 ## 📦 Available Tools
 
 | Tool | Folder | Description | Status |
@@ -29,9 +34,11 @@ Browse to any tool directory (for example [`Stabilize-Manager/`](./Stabilize-Man
 
 ---
 
-## 📬 Connect & Community
+## 💡 Got a DaVinci Resolve Bottleneck?
+Facing a repetitive, annoying editing problem or have an idea for a workflow tool that would save hours?  
+**Drop me a message! If it's a problem other editors face too, I will build the tool and release it here for FREE.**
 
-* 🎬 **DaVinci Resolve & Editing**: [@whoopseditor](https://instagram.com/whoopseditor)
-* 👤 **Personal Profile**: Praveen Kumar ([@i.vkpraveenkumar](https://instagram.com/i.vkpraveenkumar))
-
-Feedback, feature requests, or collaboration? Drop a DM on Instagram!
+* 💬 **Instagram DM (Tools & Editing)**: [@whoopseditor](https://instagram.com/whoopseditor)
+* 👤 **Instagram DM (Personal)**: [@i.vkpraveenkumar](https://instagram.com/i.vkpraveenkumar)
+* 📧 **Email**: [editempathy@gmail.com](mailto:editempathy@gmail.com)
+* 💡 **Feature Requests / Suggestions**: Open an [Issue](https://github.com/editempathy/whoopseditor/issues) on GitHub

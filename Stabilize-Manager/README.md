@@ -34,6 +34,13 @@ Copy `Stabilize_Manager.py` and `Stabilize_Clip.py` to:
 
 ---
 
-## 📬 Connect & Updates
-* Instagram: [@whoopseditor](https://instagram.com/whoopseditor)
-* Personal: [@i.vkpraveenkumar](https://instagram.com/i.vkpraveenkumar)
+## 🎁 100% Free for the Community
+All tools in **whoopseditor** are **100% free** for both personal and commercial projects. No paywalls, no subscriptions.
+
+## 💡 Got a DaVinci Resolve Bottleneck?
+Facing a repetitive, annoying editing problem or have an idea for a tool that would save hours of work?  
+**Drop me a message! If it's a problem other editors face too, I will build the tool and release it for FREE.**
+
+* 💬 **Instagram DM**: [@whoopseditor](https://instagram.com/whoopseditor) or [@i.vkpraveenkumar](https://instagram.com/i.vkpraveenkumar)
+* 📧 **Email**: [editempathy@gmail.com](mailto:editempathy@gmail.com)
+* 💡 **Feature Requests**: Open an [Issue](https://github.com/editempathy/whoopseditor/issues) on GitHub
