@@ -6,7 +6,7 @@ Crafted by **Praveen Kumar** for professional editors, colorists, and post-produ
 
 [![Star on GitHub](https://img.shields.io/github/stars/whoopseditor/DaVinci-Resolve?style=social)](https://github.com/whoopseditor/DaVinci-Resolve)
 [![DaVinci Resolve Studio & Free](https://img.shields.io/badge/DaVinci_Resolve-18.5%20%7C%2019%20%7C%2020+-blue?style=flat&logo=blackmagicdesign&logoColor=white)](https://www.blackmagicdesign.com/products/davinciresolve)
-[![Platform macOS & Windows](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-lightgrey?style=flat)]()
+[![Platform macOS & Windows](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-lightgrey?style=flat)](#compatibility)
 [![Instagram @whoopseditor](https://img.shields.io/badge/Instagram-@whoopseditor-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/whoopseditor)
 [![Instagram @i.vkpraveenkumar](https://img.shields.io/badge/Personal-@i.vkpraveenkumar-833AB4?style=flat&logo=instagram&logoColor=white)](https://instagram.com/i.vkpraveenkumar)
 
