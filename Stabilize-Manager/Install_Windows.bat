@@ -1,9 +1,8 @@
 @echo off
-setlocal EnableDelayedExpansion
 title whoopseditor DaVinci Resolve Installer
 echo ==========================================================
 echo           whoopseditor - DaVinci Resolve Tools           
-echo         Instagram: @whoopseditor | @i.vkpraveenkumar       
+echo         Instagram: @whoopseditor ^| @i.vkpraveenkumar       
 echo ==========================================================
 echo.
 echo [*] Note: Please ensure you are connected to the internet
@@ -18,29 +17,36 @@ if not exist "%RESOLVE_EDIT%" mkdir "%RESOLVE_EDIT%"
 if not exist "%RESOLVE_UTIL%" mkdir "%RESOLVE_UTIL%"
 
 echo [*] Installing scripts to DaVinci Resolve...
-copy /Y "%~dp0Stabilize_Manager.py" "%RESOLVE_EDIT%\Stabilize_Manager.py" >nul
-copy /Y "%~dp0Stabilize_Manager.py" "%RESOLVE_UTIL%\Stabilize_Manager.py" >nul
-copy /Y "%~dp0Stabilize_Clip.py" "%RESOLVE_EDIT%\Stabilize_Clip.py" >nul
-copy /Y "%~dp0Stabilize_Clip.py" "%RESOLVE_UTIL%\Stabilize_Clip.py" >nul
-echo [OK] Scripts copied to Edit & Utility menus.
+copy /Y "%~dp0Stabilize_Manager.py" "%RESOLVE_EDIT%\Stabilize_Manager.py" >nul 2>&1
+copy /Y "%~dp0Stabilize_Manager.py" "%RESOLVE_UTIL%\Stabilize_Manager.py" >nul 2>&1
+copy /Y "%~dp0Stabilize_Clip.py" "%RESOLVE_EDIT%\Stabilize_Clip.py" >nul 2>&1
+copy /Y "%~dp0Stabilize_Clip.py" "%RESOLVE_UTIL%\Stabilize_Clip.py" >nul 2>&1
+echo [OK] Scripts copied to Edit and Utility menus.
 echo.
 
 echo [*] Checking Python 3 runtime for DaVinci Resolve...
 
 set "PY_EXE="
+set "PY_DIR="
 
 :: 1. Check if standard python command exists (ignoring WindowsApps redirector)
 for /f "delims=" %%I in ('where python 2^>nul') do (
     echo %%I | find /i "WindowsApps" >nul
     if errorlevel 1 (
-        if not defined PY_EXE set "PY_EXE=%%I"
+        if not defined PY_EXE (
+            set "PY_EXE=%%I"
+            set "PY_DIR=%%~dpI"
+        )
     )
 )
 
-:: 2. Check py launcher
+:: 2. Check py launcher if not found
 if not defined PY_EXE (
     for /f "delims=" %%I in ('where py 2^>nul') do (
-        if not defined PY_EXE set "PY_EXE=%%I -3"
+        if not defined PY_EXE (
+            set "PY_EXE=%%I"
+            set "PY_DIR=%%~dpI"
+        )
     )
 )
 
@@ -48,22 +54,27 @@ if not defined PY_EXE (
 if not defined PY_EXE (
     for %%V in (312 311 310 39 38) do (
         if exist "%LOCALAPPDATA%\Programs\Python\Python%%V\python.exe" (
-            if not defined PY_EXE set "PY_EXE=%LOCALAPPDATA%\Programs\Python\Python%%V\python.exe"
+            if not defined PY_EXE (
+                set "PY_EXE=%LOCALAPPDATA%\Programs\Python\Python%%V\python.exe"
+                set "PY_DIR=%LOCALAPPDATA%\Programs\Python\Python%%V\"
+            )
         )
         if exist "C:\Program Files\Python%%V\python.exe" (
-            if not defined PY_EXE set "PY_EXE=C:\Program Files\Python%%V\python.exe"
+            if not defined PY_EXE (
+                set "PY_EXE=C:\Program Files\Python%%V\python.exe"
+                set "PY_DIR=C:\Program Files\Python%%V\"
+            )
         )
     )
 )
 
 :: 4. If Python was found, ensure PYTHONHOME is configured for DaVinci Resolve
 if defined PY_EXE (
-    echo [OK] Python runtime detected: !PY_EXE!
-    for %%F in (!PY_EXE!) do set "PY_DIR=%%~dpF"
+    echo [OK] Python runtime detected: %PY_EXE%
     if defined PY_DIR (
-        set "PY_DIR=!PY_DIR:~0,-1!"
-        setx PYTHONHOME "!PY_DIR!" >nul 2>&1
-        echo [OK] Configured PYTHONHOME for DaVinci Resolve (!PY_DIR!).
+        set "CLEAN_DIR=%PY_DIR:~0,-1%"
+        setx PYTHONHOME "%CLEAN_DIR%" >nul 2>&1
+        echo [OK] Configured PYTHONHOME for DaVinci Resolve.
     )
     goto :check_resolve
 )
@@ -77,17 +88,16 @@ echo.
 
 set "PY_INSTALLER=%TEMP%\python-3.11.8-amd64.exe"
 
-powershell -NoProfile -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $wc = New-Object System.Net.WebClient; $wc.DownloadFile('https://www.python.org/ftp/python/3.11.8/python-3.11.8-amd64.exe', '%TEMP%\python-3.11.8-amd64.exe')"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object System.Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.11.8/python-3.11.8-amd64.exe', $env:TEMP + '\python-3.11.8-amd64.exe')"
 
 if exist "%TEMP%\python-3.11.8-amd64.exe" (
     echo [*] Installing Python 3.11 runtime silently...
     start /wait "" "%TEMP%\python-3.11.8-amd64.exe" /quiet InstallAllUsers=0 PrependPath=1 Include_tcltk=1 Include_pip=0 Include_test=0 Include_doc=0 SimpleInstall=1
     del "%TEMP%\python-3.11.8-amd64.exe" >nul 2>&1
     
-    set "NEW_PY_DIR=%LOCALAPPDATA%\Programs\Python\Python311"
-    if exist "!NEW_PY_DIR!\python.exe" (
-        setx PYTHONHOME "!NEW_PY_DIR!" >nul 2>&1
-        echo [OK] Python 3.11 installed successfully and configured for DaVinci Resolve!
+    if exist "%LOCALAPPDATA%\Programs\Python\Python311\python.exe" (
+        setx PYTHONHOME "%LOCALAPPDATA%\Programs\Python\Python311" >nul 2>&1
+        echo [OK] Python 3.11 installed successfully and configured for DaVinci Resolve.
     ) else (
         echo [OK] Python runtime setup completed.
     )
