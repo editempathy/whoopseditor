@@ -40,7 +40,7 @@ Assign a custom shortcut in DaVinci Resolve (**Keyboard Customization** → **Sc
 
 ## 🚀 Quick Installation
 
-> 🌐 **First-Time Setup**: Please ensure you have an active internet connection when running the installer for the first time. The installer automatically provisions and configures the required Python 3 runtime in the background with zero manual configuration needed!
+> ⚡ **Offline & Automatic Setup**: Everything is included in the package! For Windows, the required Python installer is bundled directly for seamless 1-click offline installation. For macOS, the installer automatically provisions the universal runtime if needed. Zero manual configuration!
 
 ### macOS:
 Double-click `Install_Mac.command`. (Done!)  

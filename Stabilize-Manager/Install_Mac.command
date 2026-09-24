@@ -2,32 +2,40 @@
 # whoopseditor - 1-Click Installer for macOS
 # Instagram: @whoopseditor | Personal: @i.vkpraveenkumar
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-RESOLVE_EDIT="$HOME/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Edit"
-RESOLVE_UTIL="$HOME/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Utility"
+RESOLVE_USER_EDIT="$HOME/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Edit"
+RESOLVE_USER_UTIL="$HOME/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Utility"
+RESOLVE_SYS_EDIT="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Edit"
+RESOLVE_SYS_UTIL="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Utility"
 
 echo "=========================================================="
 echo "          whoopseditor - DaVinci Resolve Tools            "
 echo "        Instagram: @whoopseditor | @i.vkpraveenkumar       "
 echo "=========================================================="
 echo ""
-echo "[*] Note: Please ensure you are connected to the internet"
-echo "    so the installer can automatically configure the"
-echo "    required Python runtime if not already present."
-echo ""
 
-mkdir -p "$RESOLVE_EDIT"
-mkdir -p "$RESOLVE_UTIL"
+echo "[*] Installing scripts to DaVinci Resolve directories..."
+mkdir -p "$RESOLVE_USER_EDIT" "$RESOLVE_USER_UTIL"
 
-echo "[*] Installing scripts to DaVinci Resolve..."
-cp "$DIR/Stabilize_Manager.py" "$RESOLVE_EDIT/Stabilize_Manager.py"
-cp "$DIR/Stabilize_Manager.py" "$RESOLVE_UTIL/Stabilize_Manager.py"
-cp "$DIR/Stabilize_Clip.py" "$RESOLVE_EDIT/Stabilize_Clip.py"
-cp "$DIR/Stabilize_Clip.py" "$RESOLVE_UTIL/Stabilize_Clip.py"
+cp -f "$DIR/Stabilize_Manager.py" "$RESOLVE_USER_EDIT/Stabilize_Manager.py"
+cp -f "$DIR/Stabilize_Manager.py" "$RESOLVE_USER_UTIL/Stabilize_Manager.py"
+cp -f "$DIR/Stabilize_Clip.py" "$RESOLVE_USER_EDIT/Stabilize_Clip.py"
+cp -f "$DIR/Stabilize_Clip.py" "$RESOLVE_USER_UTIL/Stabilize_Clip.py"
 
-chmod +x "$RESOLVE_EDIT/Stabilize_Manager.py" "$RESOLVE_EDIT/Stabilize_Clip.py" 2>/dev/null
-chmod +x "$RESOLVE_UTIL/Stabilize_Manager.py" "$RESOLVE_UTIL/Stabilize_Clip.py" 2>/dev/null
+chmod +x "$RESOLVE_USER_EDIT/Stabilize_Manager.py" "$RESOLVE_USER_EDIT/Stabilize_Clip.py" 2>/dev/null
+chmod +x "$RESOLVE_USER_UTIL/Stabilize_Manager.py" "$RESOLVE_USER_UTIL/Stabilize_Clip.py" 2>/dev/null
 
-echo "[OK] Scripts copied to Edit & Utility menus."
+# Also copy to system-wide location if it exists
+if [ -d "/Library/Application Support/Blackmagic Design/DaVinci Resolve" ]; then
+    mkdir -p "$RESOLVE_SYS_EDIT" "$RESOLVE_SYS_UTIL" 2>/dev/null
+    cp -f "$DIR/Stabilize_Manager.py" "$RESOLVE_SYS_EDIT/Stabilize_Manager.py" 2>/dev/null
+    cp -f "$DIR/Stabilize_Manager.py" "$RESOLVE_SYS_UTIL/Stabilize_Manager.py" 2>/dev/null
+    cp -f "$DIR/Stabilize_Clip.py" "$RESOLVE_SYS_EDIT/Stabilize_Clip.py" 2>/dev/null
+    cp -f "$DIR/Stabilize_Clip.py" "$RESOLVE_SYS_UTIL/Stabilize_Clip.py" 2>/dev/null
+    chmod +x "$RESOLVE_SYS_EDIT/Stabilize_Manager.py" "$RESOLVE_SYS_EDIT/Stabilize_Clip.py" 2>/dev/null
+    chmod +x "$RESOLVE_SYS_UTIL/Stabilize_Manager.py" "$RESOLVE_SYS_UTIL/Stabilize_Clip.py" 2>/dev/null
+fi
+
+echo "[OK] Scripts copied successfully to Edit and Utility menus."
 echo ""
 
 echo "[*] Checking Python 3 runtime for DaVinci Resolve..."
@@ -69,7 +77,7 @@ if [ $PY_READY -eq 0 ]; then
     else
         echo ""
         echo "[!] ERROR: Failed to download Python runtime."
-        echo "[!] An active internet connection is required during installation."
+        echo "[!] An active internet connection is required during first-time setup on Mac."
         echo "[!] Please connect to the internet and run Install_Mac.command again."
     fi
 fi
