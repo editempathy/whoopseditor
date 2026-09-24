@@ -9,10 +9,6 @@ Part of the **whoopseditor** suite for DaVinci Resolve.
 [![Instagram @i.vkpraveenkumar](https://img.shields.io/badge/Personal-@i.vkpraveenkumar-833AB4?style=flat&logo=instagram&logoColor=white)](https://instagram.com/i.vkpraveenkumar)
 
 <p align="center">
-  <a href="https://github.com/whoopseditor/DaVinci-Resolve/releases/download/v1.0.0/whoopseditor-Stabilize-Manager-v1.0.0.zip">
-    <img src="https://img.shields.io/badge/⬇️_DOWNLOAD_FOR_FREE-ZIP_(v1.0.0)-00C853?style=for-the-badge&logo=github&logoColor=white" height="40" alt="Download Free ZIP" />
-  </a>
-  &nbsp;&nbsp;
   <a href="https://github.com/whoopseditor/DaVinci-Resolve/releases">
     <img src="https://img.shields.io/badge/📦_RELEASES-GitHub-238636?style=for-the-badge&logo=github&logoColor=white" height="40" alt="GitHub Releases" />
   </a>
@@ -28,7 +24,23 @@ Part of the **whoopseditor** suite for DaVinci Resolve.
 
 ---
 
+## 🛠 Features
+
+| Tab | Preview | Description |
+| :--- | :---: | :--- |
+| **Current Clip** | <img src="../assets/preview_current_tab.png" width="300"/> | Fast stabilization of whatever clip is currently under your playhead. |
+| **Video Tracks** | <img src="../assets/preview_tracks_tab.png" width="300"/> | Select any video tracks (V1, V2, V3...) to batch stabilize sequentially. |
+| **Clip Colors** | <img src="../assets/preview_colors_tab.png" width="300"/> | Filter and batch-stabilize clips by color tags (or uncolored clips). Supports Current Timeline & Entire Project. |
+| **Check Clips** | <img src="../assets/preview_audit_tab.png" width="300"/> | Intelligent edit-point auditor: flags re-trimmed or lengthened clips and re-stabilizes in 1 click. |
+
+### ⚡ Silent Hotkey Stabilizer (`Stabilize_Clip`)
+Assign a custom shortcut in DaVinci Resolve (**Keyboard Customization** → **Scripts** → `Stabilize_Clip`) for background 1-key stabilization with zero UI interruption!
+
+---
+
 ## 🚀 Quick Installation
+
+> 🌐 **Note**: Please ensure you have an active internet connection when running the installer for the first time. The installer automatically provisions the required Python 3 runtime in the background if your computer doesn't already have it!
 
 ### macOS:
 Double-click `Install_Mac.command`. (Done!)
@@ -41,19 +53,11 @@ Copy `Stabilize_Manager.py` and `Stabilize_Clip.py` to:
 * **macOS**: `~/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Edit/`
 * **Windows**: `%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit\`
 
----
-
-## 🛠 Features
-
-| Tab | Preview | Description |
-| :--- | :---: | :--- |
-| **Current Clip** | <img src="../assets/preview_current_tab.png" width="300"/> | Fast stabilization of whatever clip is currently under your playhead. |
-| **Video Tracks** | <img src="../assets/preview_tracks_tab.png" width="300"/> | Select any video tracks (V1, V2, V3...) to batch stabilize sequentially. |
-| **Clip Colors** | <img src="../assets/preview_colors_tab.png" width="300"/> | Filter and batch-stabilize clips by color tags (or uncolored clips). Supports Current Timeline & Entire Project. |
-| **Check Clips** | <img src="../assets/preview_audit_tab.png" width="300"/> | Intelligent edit-point auditor: flags re-trimmed or lengthened clips and re-stabilizes in 1 click. |
-
-### ⚡ Silent Hotkey Stabilizer (`Stabilize_Clip`)
-Assign a custom shortcut in DaVinci Resolve (**Keyboard Customization** → **Scripts** → `Stabilize_Clip`) for background 1-key stabilization with zero UI interruption!
+<p align="center">
+  <a href="https://github.com/whoopseditor/DaVinci-Resolve/raw/main/whoopseditor-Stabilize-Manager-v1.0.0.zip">
+    <img src="https://img.shields.io/badge/⬇️_DOWNLOAD_FOR_FREE-ZIP_(v1.0.0)-00C853?style=for-the-badge&logo=github&logoColor=white" height="42" alt="Download Free ZIP" />
+  </a>
+</p>
 
 ---
 

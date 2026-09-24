@@ -11,10 +11,6 @@ Crafted by **Praveen Kumar** for professional editors, colorists, and post-produ
 [![Instagram @i.vkpraveenkumar](https://img.shields.io/badge/Personal-@i.vkpraveenkumar-833AB4?style=flat&logo=instagram&logoColor=white)](https://instagram.com/i.vkpraveenkumar)
 
 <p align="center">
-  <a href="https://github.com/whoopseditor/DaVinci-Resolve/releases/download/v1.0.0/whoopseditor-Stabilize-Manager-v1.0.0.zip">
-    <img src="https://img.shields.io/badge/⬇️_DOWNLOAD_FOR_FREE-ZIP_(v1.0.0)-00C853?style=for-the-badge&logo=github&logoColor=white" height="42" alt="Download Free ZIP" />
-  </a>
-  &nbsp;&nbsp;
   <a href="https://github.com/whoopseditor/DaVinci-Resolve/releases">
     <img src="https://img.shields.io/badge/📦_RELEASES-GitHub-238636?style=for-the-badge&logo=github&logoColor=white" height="42" alt="GitHub Releases" />
   </a>
@@ -44,12 +40,20 @@ All tools in **whoopseditor** are **100% free** for both personal and commercial
 
 ## 🚀 Quick Download & Install
 
-1. Download the latest pre-packaged release: **[Stabilize Manager v1.0.0 (ZIP)](https://github.com/whoopseditor/DaVinci-Resolve/releases/download/v1.0.0/whoopseditor-Stabilize-Manager-v1.0.0.zip)**.
+> 🌐 **First-Time Setup**: Please ensure you have an active internet connection when running the installer for the first time. The installer automatically provisions and configures the required Python 3 runtime in the background with zero manual configuration needed!
+
+1. Download the latest pre-packaged release: **[Stabilize Manager v1.0.0 (ZIP)](https://github.com/whoopseditor/DaVinci-Resolve/raw/main/whoopseditor-Stabilize-Manager-v1.0.0.zip)**.
 2. Unzip the folder.
 3. Run the installer:
    * **macOS**: Double-click `Install_Mac.command`
    * **Windows**: Right-click `Install_Windows.bat` and click **Run**
 4. Open DaVinci Resolve → `Workspace` → `Scripts` → `Edit` → `Stabilize_Manager`!
+
+<p align="center">
+  <a href="https://github.com/whoopseditor/DaVinci-Resolve/raw/main/whoopseditor-Stabilize-Manager-v1.0.0.zip">
+    <img src="https://img.shields.io/badge/⬇️_DOWNLOAD_FOR_FREE-ZIP_(v1.0.0)-00C853?style=for-the-badge&logo=github&logoColor=white" height="46" alt="Download Free ZIP" />
+  </a>
+</p>
 
 ### Compatibility
 * **DaVinci Resolve**: Studio & Free (v18.5, v19.x, v20.x+)
