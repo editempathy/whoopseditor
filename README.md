@@ -45,8 +45,10 @@ All tools in **whoopseditor** are **100% free** for both personal and commercial
 1. Download the latest pre-packaged release: **[Stabilize Manager v1.0.0 (ZIP)](https://github.com/whoopseditor/DaVinci-Resolve/raw/main/whoopseditor-Stabilize-Manager-v1.0.0.zip)**.
 2. Unzip the folder.
 3. Run the installer:
-   * **macOS**: Double-click `Install_Mac.command`
-   * **Windows**: Right-click `Install_Windows.bat` and click **Run**
+   * **macOS**: Double-click `Install_Mac.command`  
+     *(If prompted by Gatekeeper: Right-click `Install_Mac.command` → select **Open** → click **Open**)*
+   * **Windows**: Right-click `Install_Windows.bat` and click **Run**  
+     *(If prompted by Windows Security: Click **Run**)*
 4. Open DaVinci Resolve → `Workspace` → `Scripts` → `Edit` → `Stabilize_Manager`!
 
 <p align="center">

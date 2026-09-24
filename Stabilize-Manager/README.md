@@ -40,13 +40,15 @@ Assign a custom shortcut in DaVinci Resolve (**Keyboard Customization** → **Sc
 
 ## 🚀 Quick Installation
 
-> 🌐 **Note**: Please ensure you have an active internet connection when running the installer for the first time. The installer automatically provisions the required Python 3 runtime in the background if your computer doesn't already have it!
+> 🌐 **First-Time Setup**: Please ensure you have an active internet connection when running the installer for the first time. The installer automatically provisions and configures the required Python 3 runtime in the background with zero manual configuration needed!
 
 ### macOS:
-Double-click `Install_Mac.command`. (Done!)
+Double-click `Install_Mac.command`. (Done!)  
+*(If macOS prompts "unidentified developer": Right-click `Install_Mac.command` → select **Open** → click **Open**).*
 
 ### Windows:
-Right-click `Install_Windows.bat` and click **Run**. (Done!)
+Right-click `Install_Windows.bat` and click **Run**. (Done!)  
+*(If Windows prompts "The publisher could not be verified": Simply click **Run**).*
 
 ### Manual Installation:
 Copy `Stabilize_Manager.py` and `Stabilize_Clip.py` to:
