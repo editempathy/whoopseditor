@@ -13,29 +13,22 @@ echo "        Instagram: @whoopseditor | @i.vkpraveenkumar       "
 echo "=========================================================="
 echo ""
 
-echo "[*] Installing scripts to DaVinci Resolve directories..."
-mkdir -p "$RESOLVE_USER_EDIT" "$RESOLVE_USER_UTIL"
+echo "[1/3] Installing scripts to DaVinci Resolve..."
+# Clean up duplicate files from Utility or old locations
+rm -f "$HOME/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Utility/Stabilize_*.py" 2>/dev/null
+rm -f "/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Edit/Stabilize_*.py" 2>/dev/null
+rm -f "/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Utility/Stabilize_*.py" 2>/dev/null
 
-cp -f "$DIR/Stabilize_Manager.py" "$RESOLVE_USER_EDIT/Stabilize_Manager.py"
-cp -f "$DIR/Stabilize_Manager.py" "$RESOLVE_USER_UTIL/Stabilize_Manager.py"
-cp -f "$DIR/Stabilize_Clip.py" "$RESOLVE_USER_EDIT/Stabilize_Clip.py"
-cp -f "$DIR/Stabilize_Clip.py" "$RESOLVE_USER_UTIL/Stabilize_Clip.py"
+TARGET_DIR="$HOME/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Edit"
+mkdir -p "$TARGET_DIR"
 
-chmod +x "$RESOLVE_USER_EDIT/Stabilize_Manager.py" "$RESOLVE_USER_EDIT/Stabilize_Clip.py" 2>/dev/null
-chmod +x "$RESOLVE_USER_UTIL/Stabilize_Manager.py" "$RESOLVE_USER_UTIL/Stabilize_Clip.py" 2>/dev/null
+cp -f "$DIR/Stabilize_Manager.py" "$TARGET_DIR/Stabilize_Manager.py"
+cp -f "$DIR/Stabilize_Clip.py" "$TARGET_DIR/Stabilize_Clip.py"
 
-# Also copy to system-wide location if it exists
-if [ -d "/Library/Application Support/Blackmagic Design/DaVinci Resolve" ]; then
-    mkdir -p "$RESOLVE_SYS_EDIT" "$RESOLVE_SYS_UTIL" 2>/dev/null
-    cp -f "$DIR/Stabilize_Manager.py" "$RESOLVE_SYS_EDIT/Stabilize_Manager.py" 2>/dev/null
-    cp -f "$DIR/Stabilize_Manager.py" "$RESOLVE_SYS_UTIL/Stabilize_Manager.py" 2>/dev/null
-    cp -f "$DIR/Stabilize_Clip.py" "$RESOLVE_SYS_EDIT/Stabilize_Clip.py" 2>/dev/null
-    cp -f "$DIR/Stabilize_Clip.py" "$RESOLVE_SYS_UTIL/Stabilize_Clip.py" 2>/dev/null
-    chmod +x "$RESOLVE_SYS_EDIT/Stabilize_Manager.py" "$RESOLVE_SYS_EDIT/Stabilize_Clip.py" 2>/dev/null
-    chmod +x "$RESOLVE_SYS_UTIL/Stabilize_Manager.py" "$RESOLVE_SYS_UTIL/Stabilize_Clip.py" 2>/dev/null
-fi
+chmod +x "$TARGET_DIR/Stabilize_Manager.py" "$TARGET_DIR/Stabilize_Clip.py" 2>/dev/null
 
-echo "[OK] Scripts copied successfully to Edit and Utility menus."
+echo "[OK] Installed cleanly to: Workspace › Scripts › Edit"
+echo "     (Cleaned up any duplicate menu entries)"
 echo ""
 
 echo "[*] Checking Python 3 runtime for DaVinci Resolve..."

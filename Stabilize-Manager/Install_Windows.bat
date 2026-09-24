@@ -6,41 +6,25 @@ echo         Instagram: @whoopseditor ^| @i.vkpraveenkumar
 echo ==========================================================
 echo.
 
-echo [1/3] Installing scripts to DaVinci Resolve directories...
+echo [1/3] Installing scripts to DaVinci Resolve...
 
-:: 1. User AppData (Support variant - standard Resolve location)
-if not exist "%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit" mkdir "%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit" >nul 2>&1
-if not exist "%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility" mkdir "%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility" >nul 2>&1
-copy /Y "%~dp0Stabilize_Manager.py" "%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit\Stabilize_Manager.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Manager.py" "%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility\Stabilize_Manager.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Clip.py" "%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit\Stabilize_Clip.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Clip.py" "%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility\Stabilize_Clip.py" >nul 2>&1
+:: Clean up old duplicate copies from non-standard or multiple folders
+del /Q /F "%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility\Stabilize_*.py" >nul 2>&1
+del /Q /F "%APPDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Edit\Stabilize_*.py" >nul 2>&1
+del /Q /F "%APPDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility\Stabilize_*.py" >nul 2>&1
+del /Q /F "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Edit\Stabilize_*.py" >nul 2>&1
+del /Q /F "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility\Stabilize_*.py" >nul 2>&1
+del /Q /F "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit\Stabilize_*.py" >nul 2>&1
+del /Q /F "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility\Stabilize_*.py" >nul 2>&1
 
-:: 2. User AppData (Direct Fusion variant)
-if not exist "%APPDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Edit" mkdir "%APPDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Edit" >nul 2>&1
-if not exist "%APPDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility" mkdir "%APPDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility" >nul 2>&1
-copy /Y "%~dp0Stabilize_Manager.py" "%APPDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Edit\Stabilize_Manager.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Manager.py" "%APPDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility\Stabilize_Manager.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Clip.py" "%APPDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Edit\Stabilize_Clip.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Clip.py" "%APPDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility\Stabilize_Clip.py" >nul 2>&1
+:: Install cleanly to official standard DaVinci Resolve Scripts\Edit folder
+set "TARGET_DIR=%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit"
+if not exist "%TARGET_DIR%" mkdir "%TARGET_DIR%" >nul 2>&1
+copy /Y "%~dp0Stabilize_Manager.py" "%TARGET_DIR%\Stabilize_Manager.py" >nul 2>&1
+copy /Y "%~dp0Stabilize_Clip.py" "%TARGET_DIR%\Stabilize_Clip.py" >nul 2>&1
 
-:: 3. ProgramData All Users (Direct Fusion variant)
-if not exist "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Edit" mkdir "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Edit" >nul 2>&1
-if not exist "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility" mkdir "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility" >nul 2>&1
-copy /Y "%~dp0Stabilize_Manager.py" "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Edit\Stabilize_Manager.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Manager.py" "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility\Stabilize_Manager.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Clip.py" "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Edit\Stabilize_Clip.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Clip.py" "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility\Stabilize_Clip.py" >nul 2>&1
-
-:: 4. ProgramData All Users (Support variant)
-if not exist "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit" mkdir "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit" >nul 2>&1
-if not exist "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility" mkdir "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility" >nul 2>&1
-copy /Y "%~dp0Stabilize_Manager.py" "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit\Stabilize_Manager.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Manager.py" "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility\Stabilize_Manager.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Clip.py" "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Edit\Stabilize_Clip.py" >nul 2>&1
-copy /Y "%~dp0Stabilize_Clip.py" "%PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility\Stabilize_Clip.py" >nul 2>&1
-
-echo [OK] Script files successfully copied to DaVinci Resolve menus!
+echo [OK] Installed cleanly to: Workspace ^> Scripts ^> Edit
+echo      (Cleaned up any duplicate menu entries)
 echo.
 
 echo [2/3] Checking Python 3 runtime for DaVinci Resolve...
